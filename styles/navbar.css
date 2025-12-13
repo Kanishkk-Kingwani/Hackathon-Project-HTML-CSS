@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo2 {
+    height: 45px;
+    width: auto;
+}
+
+#nav-title {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.links a {
+    display: inline-block;
+    padding: 8px 8px;
+    border-radius: 6px;
+    border: 2px solid blue;
+    background-color: tomato;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+.links a {
+    position: relative;
+    padding: 8px 4px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.links a:visited {
+    background-color: tomato;
+    color: white;
+}
+.links a:hover {
+    background-color: yellow;
+    color: black;
+}
+.links a:active {
+    background-color: black;
+    color: white;
+}
