@@ -12,8 +12,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: white;
+    background-color: tomato;
     z-index: 1000;
+    opacity: 85%;
 }
 
 .nav-left {
@@ -45,7 +46,7 @@
     padding: 8px 8px;
     border-radius: 6px;
     border: 2px solid blue;
-    background-color: tomato;
+    background-color: green;
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -62,7 +63,7 @@
 }
 
 .links a:visited {
-    background-color: tomato;
+    background-color: green;
     color: white;
 }
 
