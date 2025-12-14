@@ -1,11 +1,15 @@
 .governors-section {
-  padding: 60px 0;
+  padding: 20px 0 60px;
   text-align: center;
+  background-color: hsl(9, 78%, 66%);
 }
 .governors-section h1{
     font-size: 6rem;
     margin-bottom: 40px;
+    margin-top: 0;
+    color: hsl(240, 91%, 64%);
 }
+
 .gov-slideshow {
   width: 1200px;
   margin: auto;
@@ -32,6 +36,7 @@
   width: 50%;
   padding-left: 40px;
   text-align: center;
+  color: #8225df;
 }
 .gov-info h2 {
   margin-bottom: 16px;
