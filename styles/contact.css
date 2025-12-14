@@ -68,8 +68,6 @@ a {
     gap: 15px;
 }
 
-.form-group {}
-
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
