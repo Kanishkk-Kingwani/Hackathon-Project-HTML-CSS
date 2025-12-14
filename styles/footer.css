@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.footer {
+    margin-top: auto; 
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 60px;
+    border-top: 4px solid #00b894;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 280px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: #fff;
+    border-left: 3px solid #00b894;
+    padding-left: 10px;
+}
+
+.contact-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #00b894; 
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.text {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a1a1a;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    display: inline-block;
+    width: fit-content;
+    
+    border-left: 4px solid #555; 
+}
+
+.instagram { border-left-color: #E1306C; }
+.facebook  { border-left-color: #4267B2; }
+.youtube   { border-left-color: #FF0000; }
+.linkedin  { border-left-color: #0077ff; }
+
+.social-btn:hover {
+    background-color: #333;
+    padding-left: 25px; 
+}
+
+.map-box {
+    width: 100%;
+    border: 1px solid #333;
+    padding: 5px; 
+    border-radius: 4px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 150px;
+    display: inline-block;
+}
+
+.footer-bottom {
+    background-color: #0a0a0a;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #222;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+@media (max-width: 800px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-section {
+        width: 100%;
+    }
+}
