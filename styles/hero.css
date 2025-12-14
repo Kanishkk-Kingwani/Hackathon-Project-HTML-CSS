@@ -1,16 +1,19 @@
 html {
     scroll-behavior: smooth;
 }
-.hero-section{
+
+.hero-section {
     margin-top: 70px;
     height: 100vh;
     background-image: url(../assets/kgp.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
+    margin: 60px;
 }
-#hero-box{
-    position:absolute;
+
+#hero-box {
+    position: absolute;
     top: 0;
     left: 0;
     width: 30%;
@@ -26,12 +29,15 @@ html {
     text-align: center;
     box-sizing: border-box;
 }
+
 #hero-box h1 {
     margin-bottom: 10px;
 }
+
 #hero-box h3 {
     margin: 10px 0;
 }
+
 #hero-box p {
     margin-top: 10px;
     line-height: 1.3;
