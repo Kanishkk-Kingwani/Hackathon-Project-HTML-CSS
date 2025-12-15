@@ -1,11 +1,11 @@
 .vision-mission {
-  background: white;
+  background-color: --bg-color;
   padding-top: 0%;
   padding-bottom: 80px;
   padding-left: 80px;
   padding-right: 80px;
   text-align: center;
-background-color: hsl(0, 0%, 96%)
+background-color: --bg-color;
 }
 .vision-mission h1 {
   font-size: 2.2rem;

@@ -61,6 +61,7 @@
 }
 
 .social-btn {
+    text-align: right;
     text-decoration: none;
     color: #fff;
     background-color:#035E7B;
@@ -69,8 +70,7 @@
     font-size: 14px;
     transition: 0.3s ease;
     display: inline-block;
-    width: fit-content;
-    
+    width: 150px;
     border-left: 4px solid #555; 
 }
 

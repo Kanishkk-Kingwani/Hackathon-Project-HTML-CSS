@@ -1,3 +1,25 @@
+.main-wrapper {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --nav-bg: #035E7B;
+    --nav-text: white;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;     
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-switch {
+    display: none;
+}
+
+#theme-switch:checked ~ .main-wrapper {
+    --bg-color: #121212;    
+    --text-color: #e0e0e0;
+    --nav-bg: #022c3b;    
+    --nav-text: #cccccc;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -8,9 +30,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #035E7B;
+    background-color: var(--nav-bg);
     z-index: 1000;
-    opacity: 85%;
+    opacity: 95%;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+#logo2 {
+    height: 45px;
+    width: auto;
+    filter: brightness(0) invert(1); 
 }
 
 .nav-left {
@@ -19,59 +49,62 @@
     gap: 12px;
 }
 
-#logo2 {
-    height: 45px;
-    width: auto;
-    filter: invert(1);
-}
-
 #nav-title {
     font-size: 26px;
     font-weight: 600;
     font-family: Arial, sans-serif;
-    color: white;
+    color: var(--nav-text);
 }
+
 .logo {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .links {
     list-style: none;
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .links a {
     display: inline-block;
-    padding: 8px 8px;
+    padding: 8px 12px;
     border-radius: 6px;
-    color: white;
+    color: var(--nav-text);
     text-decoration: none;
     font-size: 16px;
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
-}
-
-.links a {
-    position: relative;
-    padding: 8px 4px;
-    font-size: 20px;
     font-weight: 500;
-}
-
-.links a:visited {
-    background-color: rgb(3, 42, 56);
-    color: white;
+    transition: all 0.2s ease;
 }
 
 .links a:hover {
-    background-color: #4993b1;
-    color: black;
-    transform: translateY(-2px) scale(1.02);
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
-.links a:active {
-    background-color: black;
-    color: white;
+.toggle-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 5px;
+    user-select: none; 
+    transition: transform 0.2s ease;
+    display: block;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Default Icon (Moon) */
+.toggle-btn::after {
+    content: '🌙';
+}
+
+/* When Checkbox is Checked -> Change Icon to Sun */
+#theme-switch:checked ~ .main-wrapper .toggle-btn::after {
+    content: '☀️';
 }
