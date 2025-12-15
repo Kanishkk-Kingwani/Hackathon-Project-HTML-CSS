@@ -1,0 +1,37 @@
+.vision-mission {
+  background: white;
+  padding-top: 0%;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+background-color: hsl(0, 0%, 96%)
+}
+.vision-mission h1 {
+  font-size: 2.2rem;
+  color: hsl(352, 81%, 38%);
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+.vm-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.vm-card {
+  flex: 1;
+  background: lch(72.16% 44.76 23.84);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+.vm-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: white;
+}
+.vm-card p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
