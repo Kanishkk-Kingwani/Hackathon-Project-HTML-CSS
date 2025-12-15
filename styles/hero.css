@@ -7,6 +7,12 @@
     position: relative;
 }
 
+.logo1 {
+    height:"140";
+     width:"140";
+    filter: invert(1);
+}
+
 #hero-box {
     position: absolute;
     top: 0;

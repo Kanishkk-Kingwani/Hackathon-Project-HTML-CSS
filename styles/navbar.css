@@ -22,6 +22,7 @@
 #logo2 {
     height: 45px;
     width: auto;
+    filter: invert(1);
 }
 
 #nav-title {
