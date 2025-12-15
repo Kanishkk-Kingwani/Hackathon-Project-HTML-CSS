@@ -1,7 +1,7 @@
 .footer {
     margin-top: auto; 
     width: 100%;
-    background-color: #000000;
+    background-color: #033445;
     color: #ffffff;
     padding-top: 60px;
     border-top: 4px solid #00b894;
@@ -63,7 +63,7 @@
 .social-btn {
     text-decoration: none;
     color: #fff;
-    background-color: #1a1a1a;
+    background-color:#035E7B;
     padding: 12px 20px;
     border-radius: 4px;
     font-size: 14px;

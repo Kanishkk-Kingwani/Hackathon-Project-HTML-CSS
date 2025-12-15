@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: tomato;
+    background-color: #035E7B;
     z-index: 1000;
     opacity: 85%;
 }
@@ -28,7 +28,10 @@
     font-size: 26px;
     font-weight: 600;
     font-family: Arial, sans-serif;
-    color: #000;
+    color: white;
+}
+.logo {
+    text-decoration: none;
 }
 
 .links {
@@ -41,8 +44,6 @@
     display: inline-block;
     padding: 8px 8px;
     border-radius: 6px;
-    border: 2px solid blue;
-    background-color: green;
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -54,18 +55,19 @@
 .links a {
     position: relative;
     padding: 8px 4px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .links a:visited {
-    background-color: green;
+    background-color: rgb(3, 42, 56);
     color: white;
 }
 
 .links a:hover {
-    background-color: yellow;
+    background-color: #4993b1;
     color: black;
+    transform: translateY(-2px) scale(1.02);
 }
 
 .links a:active {

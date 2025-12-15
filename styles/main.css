@@ -17,4 +17,6 @@ body {
   --text-muted: hsl(0, 0%, 33%);
   --bg-light: hsl(0, 0%, 97%);
   --white: hsl(0, 0%, 100%);
+  --primary-blue: #023e53;
+  --bg-blue: #167598;
 }

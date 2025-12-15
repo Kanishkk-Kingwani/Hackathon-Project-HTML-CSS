@@ -14,7 +14,7 @@
     align-items: center;
     width: 90%;
     padding: 30px;
-    background-color: #1a1a1a;
+    background-color:  #033445;
     border-radius: 10px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
 }
@@ -80,7 +80,7 @@
     padding: 12px;
     border: 1px solid #444;
     border-radius: 6px;
-    background-color: #2b2b2b;
+    background-color: #9fbac3;
     color: #ffffff;
     font-size: 16px;
     box-sizing: border-box;
@@ -89,13 +89,13 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #888;
+    color: black;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #007bff;
-    background-color: #3a3a3a;
+    background-color: #a9abac;
     outline: solid 2px blue;
 }
 
