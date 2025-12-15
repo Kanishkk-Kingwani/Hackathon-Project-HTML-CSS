@@ -1,8 +1,4 @@
-main {
-    margin: 0;
-    background-color: #fb4f4f;
-    font-family: Arial, sans-serif;
-}
+
 
 #heading {
     font-size: 2.2rem;
@@ -60,7 +56,7 @@ main {
     text-align: left;
 }
 
-a {
+.contact-container a {
     color: #007bff;
     text-decoration: none;
     font-size: 16px;

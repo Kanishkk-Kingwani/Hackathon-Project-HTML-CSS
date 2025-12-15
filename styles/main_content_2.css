@@ -20,7 +20,7 @@ background-color: hsl(0, 0%, 96%)
 }
 .vm-card {
   flex: 1;
-  background: lch(72.16% 44.76 23.84);
+  background: hsl(9, 62%, 60%);;
   color: white;
   padding: 40px;
   border-radius: 10px;

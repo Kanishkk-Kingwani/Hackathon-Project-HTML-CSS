@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: hsl(0, 0%, 97%);
+  line-height: 1.6;
+}
+:root {
+  --primary-red: hsl(352, 81%, 38%);
+  --text-dark: hsl(0, 0%, 12%);
+  --text-muted: hsl(0, 0%, 33%);
+  --bg-light: hsl(0, 0%, 97%);
+  --white: hsl(0, 0%, 100%);
+}

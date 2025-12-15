@@ -11,7 +11,8 @@
 }
 
 .gov-slideshow {
-  width: 1200px;
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
   overflow: hidden;
 }
@@ -21,7 +22,7 @@
   animation: govSlide 28s infinite;
 }
 .gov-slide {
-  width: 1200px;
+  width: 100%;
   display: flex;
   align-items: center;
 }
