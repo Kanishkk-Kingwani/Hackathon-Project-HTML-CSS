@@ -42,9 +42,15 @@
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
+
 .competency p {
   color: var(--text-muted);
   font-size: 0.95rem;
+}
+
+.bullet :hover{
+  background-color: #116584;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4c);
 }
 
 @media (max-width: 768px) {
