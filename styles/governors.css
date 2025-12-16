@@ -29,6 +29,8 @@
 .gov-slide > img {
   width: 50%;
   height: 420px;
+  transform-origin: centre 20%;
+  transform: scale(0.8);
   object-fit: cover;  
   border-radius: 10px;
   object-position: top center;
