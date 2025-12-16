@@ -6,41 +6,51 @@ input[type="radio"] {
 .faq-section {
   padding: 80px 10%;
   background-image: url("../assets/FAQs.jpg");
-  
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
 }
 
 .faq-title {
   background: hsl(197, 43%, 55%);
   color: white;
-  font-size: 5rem;
   text-align: center;
   padding: 40px 0;
   margin-bottom: 60px;
+  font-size: clamp(2.5rem, 5vw, 5rem);
 }
+
 .faq-slider {
   position: relative;
   height: auto;
-  min-height: 420px;
+  min-height: 450px; 
 }
+
 .faq-card {
   background: hsl(201, 22%, 67%);
   padding: 40px;
   border-radius: 6px;
   position: absolute;
   width: 100%;
+  min-height: 100%;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
-  min-height: 100%;
+  
+  box-sizing: border-box;
 }
+
 .faq-card h2 {
-  font-size: 2rem;
   margin-bottom: 20px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
+
 .faq-card p {
-  font-size: 1.4rem;
   line-height: 1.6;
+  color: #1a1a1a;
+  font-size: clamp(1rem, 2vw, 1.4rem);
 }
+
 #faq1:checked ~ .faq-slider .c1,
 #faq2:checked ~ .faq-slider .c2,
 #faq3:checked ~ .faq-slider .c3,
@@ -48,20 +58,56 @@ input[type="radio"] {
 #faq5:checked ~ .faq-slider .c5 {
   opacity: 1;
   pointer-events: auto;
+  z-index: 1;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  position: relative; 
+  z-index: 2;
 }
+
 .nav label {
   background: hsl(197, 67%, 31%);
   color: white;
-  font-size: 2.5rem;
   padding: 8px 18px;
   border-radius: 50%;
   cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
 }
+
 .nav label:hover {
   background: hsl(197, 57%, 18%);
+}
+
+@media screen and (max-width: 750px) {
+  .faq-section {
+  padding: 40px 5%;
+  }
+
+  .faq-title {
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .faq-card {
+    padding: 25px;
+    height: auto; 
+    min-height: 400px; 
+  }
+
+  .nav label {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+  }
 }
