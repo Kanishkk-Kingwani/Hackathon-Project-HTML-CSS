@@ -3,20 +3,22 @@
     --text-color: #000000;
     --nav-bg: #035E7B;
     --nav-text: white;
+
     background-color: var(--bg-color);
     color: var(--text-color);
-    min-height: 100vh;     
+    min-height: 100vh;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#theme-switch {
+#theme-switch, 
+#nav-toggle {
     display: none;
 }
 
 #theme-switch:checked ~ .main-wrapper {
-    --bg-color: #121212;    
+    --bg-color: #121212;
     --text-color: #e0e0e0;
-    --nav-bg: #022c3b;    
+    --nav-bg: #022c3b;
     --nav-text: #cccccc;
 }
 
@@ -25,44 +27,40 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 0 50px;
     background-color: var(--nav-bg);
     z-index: 1000;
-    opacity: 95%;
-    transition: background-color 0.3s ease;
     box-sizing: border-box;
-}
-
-#logo2 {
-    height: 350px;
-    width: auto;
-    transform: translateY(-10px)
-
+    transition: background-color 0.3s ease;
 }
 
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 12px;
 }
 
-
-.logo {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#logo2 {
+    height: auto;
+    width: 200px;
+    object-fit: ;
 }
 
 .links {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    margin-left: auto;
+    margin-right: 30px;
 }
 
 .links a {
@@ -81,69 +79,82 @@
     transform: translateY(-2px);
 }
 
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .toggle-btn {
     cursor: pointer;
     font-size: 1.5rem;
     padding: 5px;
-    user-select: none; 
+    user-select: none;
     transition: transform 0.2s ease;
     display: block;
 }
 
 .toggle-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(15deg);
 }
 
-/* Default Icon (Moon) */
 .toggle-btn::after {
     content: '🌙';
 }
 
-/* When Checkbox is Checked -> Change Icon to Sun */
 #theme-switch:checked ~ .main-wrapper .toggle-btn::after {
     content: '☀️';
 }
 
-summary {
-  list-style: none;
-}
-
-
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
 .menu-icon {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
+    display: none; 
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--nav-text);
+    user-select: none;
 }
 
+@media (max-width: 750px) {
 
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
+    .navbar {
+        padding: 0 20px;
+    }
 
-  .nav-menu {
-    position: relative;
-  }
+    .menu-icon {
+        display: block;
+    }
+    
+    .links {
+        margin: 0;
+    }
 
-  .links {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    background-color: #035E7B;
-    border-radius: 6px;
-    padding: 1rem 0;
-    display: none;
-  }
+    .links {
+        display: none;
+        
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--nav-bg);
+        padding: 20px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
 
-  .nav-menu[open] .links {
-    display: flex;
-  } 
+    .links li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    #nav-toggle:checked ~ .main-wrapper .links {
+        display: flex;
+        animation: slideDown 0.3s forwards;
+    }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }

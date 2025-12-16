@@ -52,13 +52,15 @@ hr {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 750px) {
     .hero-section {
         padding-top: 4rem;
+
     }
 
     #hero-box {
         gap: 0.4rem;
+        width: 100%;
     }
 
     .hero-section p br{

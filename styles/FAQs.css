@@ -1,4 +1,3 @@
-
 input[type="radio"] {
   display: none;
 }
@@ -6,16 +5,17 @@ input[type="radio"] {
 .faq-section {
   padding: 80px 10%;
   background-image: url("../assets/FAQs.jpg");
-  background-size: cover;
+  background-size: cover; /* Changed to cover for better scaling */
   background-position: center;
-  min-height: 60vh;
+  /* Removed fixed min-height so it grows with content */
+  height: auto; 
 }
 
 .faq-title {
   background: hsl(197, 43%, 55%);
   color: white;
   text-align: center;
-  padding: 40px 0;
+  padding: 10px 0;
   margin-bottom: 60px;
   font-size: clamp(2.5rem, 5vw, 5rem);
 }
@@ -23,25 +23,30 @@ input[type="radio"] {
 .faq-slider {
   position: relative;
   height: auto;
-  min-height: 450px; 
+  /* Removed fixed height constraint */
+  width: 100%;
 }
 
 .faq-card {
+  /* CHANGED: Hide by default using display, not opacity */
+  display: none; 
+  flex-direction: column;
+  gap: 20px;
   background: hsl(201, 22%, 67%);
   padding: 40px;
   border-radius: 6px;
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
   
+  /* CHANGED: Removed position: absolute */
+  position: relative; 
+  width: 100%;
+  height: auto;
+  
+  /* Removed opacity/pointer-events logic */
   box-sizing: border-box;
 }
 
 .faq-card h2 {
-  margin-bottom: 20px;
+  margin-bottom: auto;
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
@@ -51,14 +56,21 @@ input[type="radio"] {
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
+/* CHANGED: When checked, turn display to FLEX */
 #faq1:checked ~ .faq-slider .c1,
 #faq2:checked ~ .faq-slider .c2,
 #faq3:checked ~ .faq-slider .c3,
 #faq4:checked ~ .faq-slider .c4,
 #faq5:checked ~ .faq-slider .c5 {
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 1;
+  display: flex;
+  /* Optional: Add a small animation since transition doesn't work on display */
+  animation: fadeIn 0.5s ease;
+}
+
+/* Add this keyframe for smooth appearance */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .nav {
@@ -91,7 +103,7 @@ input[type="radio"] {
 
 @media screen and (max-width: 750px) {
   .faq-section {
-  padding: 40px 5%;
+    padding: 40px 5%;
   }
 
   .faq-title {
@@ -102,7 +114,7 @@ input[type="radio"] {
   .faq-card {
     padding: 25px;
     height: auto; 
-    min-height: 400px; 
+    /* Removed min-height to prevent gaps */
   }
 
   .nav label {
