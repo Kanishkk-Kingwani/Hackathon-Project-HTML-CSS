@@ -38,9 +38,10 @@
 }
 
 #logo2 {
-    height: 45px;
+    height: 350px;
     width: auto;
-    filter: brightness(0) invert(1); 
+    transform: translateY(-10px)
+
 }
 
 .nav-left {
@@ -49,12 +50,6 @@
     gap: 12px;
 }
 
-#nav-title {
-    font-size: 26px;
-    font-weight: 600;
-    font-family: Arial, sans-serif;
-    color: var(--nav-text);
-}
 
 .logo {
     text-decoration: none;
@@ -107,4 +102,48 @@
 /* When Checkbox is Checked -> Change Icon to Sun */
 #theme-switch:checked ~ .main-wrapper .toggle-btn::after {
     content: '☀️';
+}
+
+summary {
+  list-style: none;
+}
+
+
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    position: relative;
+  }
+
+  .links {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #035E7B;
+    border-radius: 6px;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .nav-menu[open] .links {
+    display: flex;
+  } 
 }

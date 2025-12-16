@@ -1,7 +1,7 @@
 .hero-section {
     margin-top: 70px;
     height: 100vh;
-    background-image: url(../assets/kgp.jpg);
+    background-image: url(../assets/kgpmb.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -49,4 +49,19 @@ hr {
   height: 2px;
   background-color: #035E7B;
   margin: 0;
+}
+
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding-top: 4rem;
+    }
+
+    #hero-box {
+        gap: 0.4rem;
+    }
+
+    .hero-section p br{
+        display: none;
+    }
 }
