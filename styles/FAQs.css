@@ -5,15 +5,14 @@ input[type="radio"] {
 .faq-section {
   padding: 80px 10%;
   background-image: url("../assets/FAQs.jpg");
-  background-size: cover; /* Changed to cover for better scaling */
+  background-size: cover;
   background-position: center;
-  /* Removed fixed min-height so it grows with content */
   height: auto; 
 }
 
 .faq-title {
   background: hsl(197, 43%, 55%);
-  color: white;
+  color: var(--text-color);
   text-align: center;
   padding: 10px 0;
   margin-bottom: 60px;
@@ -23,25 +22,19 @@ input[type="radio"] {
 .faq-slider {
   position: relative;
   height: auto;
-  /* Removed fixed height constraint */
   width: 100%;
 }
 
 .faq-card {
-  /* CHANGED: Hide by default using display, not opacity */
   display: none; 
   flex-direction: column;
   gap: 20px;
-  background: hsl(201, 22%, 67%);
+  background: hsl(200, 17%, 52%);
   padding: 40px;
   border-radius: 6px;
-  
-  /* CHANGED: Removed position: absolute */
   position: relative; 
   width: 100%;
   height: auto;
-  
-  /* Removed opacity/pointer-events logic */
   box-sizing: border-box;
 }
 
@@ -52,22 +45,19 @@ input[type="radio"] {
 
 .faq-card p {
   line-height: 1.6;
-  color: #1a1a1a;
+  color: var(--text-color);
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
-/* CHANGED: When checked, turn display to FLEX */
 #faq1:checked ~ .faq-slider .c1,
 #faq2:checked ~ .faq-slider .c2,
 #faq3:checked ~ .faq-slider .c3,
 #faq4:checked ~ .faq-slider .c4,
 #faq5:checked ~ .faq-slider .c5 {
   display: flex;
-  /* Optional: Add a small animation since transition doesn't work on display */
   animation: fadeIn 0.5s ease;
 }
 
-/* Add this keyframe for smooth appearance */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -114,7 +104,6 @@ input[type="radio"] {
   .faq-card {
     padding: 25px;
     height: auto; 
-    /* Removed min-height to prevent gaps */
   }
 
   .nav label {

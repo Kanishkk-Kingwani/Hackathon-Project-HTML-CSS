@@ -1,9 +1,12 @@
 #heading {
     font-size: 2.2rem;
     margin: 30px 0 20px 5%; 
-    color: #ffffff;
+    color: var(--text-color);
 }
 
+.main h3{
+    text-color: var(--contact-text)
+}
 .contact-container {
     margin: 0 auto 60px auto; 
     display: flex;
@@ -13,35 +16,38 @@
     width: 90%;
     max-width: 1200px;
     padding: 40px;
-    background-color: #033445;
+    background-color: var(--contact-container-bg);
     border-radius: 10px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
 }
 
 .header-section {
     width: 40%; 
     text-align: left;
     margin-right: 20px;
-    color: white;
+    color: var(--contact-text);
 }
 
 .header-section h3 {
-    color: #ffffff;
+    color: var(--contact-text);
     font-size: 1.7rem;
     margin-bottom: 10px;
     margin-top: 0;
 }
 
 .header-section p {
-    color: #b0b0b0;
+    color: var(--contact-text);
+    opacity: 0.8;
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
 
 .for-further-queries {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #b0b0b0;
+    color: var(--contact-text);
+    opacity: 0.8;
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -53,7 +59,7 @@
 }
 
 .contact-container a {
-    color: #007bff;
+    color: var(--contact-btn-bg);
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -74,24 +80,24 @@
     padding: 15px;
     border: 1px solid #444;
     border-radius: 6px;
-    background-color: #9fbac3;
-    color: #000;
+    background-color: var(--contact-input-bg);
+    color: var(--contact-input-text);
     font-size: 16px;
     box-sizing: border-box;
     font-family: inherit;
-    transition: border-color 0.3s, background-color 0.3s;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #333;
+    color: var(--contact-input-text);
     opacity: 0.7;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #007bff;
-    background-color: #ffffff;
+    border-color: var(--contact-btn-bg);
+    background-color: var(--bg-color);
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }
@@ -105,7 +111,7 @@
     width: 100%;
     padding: 15px;
     margin-top: 10px;
-    background-color: #007bff;
+    background-color: var(--contact-btn-bg);
     color: white;
     font-size: 18px;
     font-weight: 600;
@@ -116,19 +122,19 @@
 }
 
 .submit-button:hover {
-    background-color: #0056b3;
+    background-color: var(--contact-btn-hover);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
 }
 
 .submit-button:active {
-    background-color: #004499;
+    background-color: var(--contact-btn-hover);
     transform: translateY(0);
 }
 
 @media screen and (max-width: 750px) {
     #heading {
-        color: white;
+        color: var(--text-color);
         font-size: 2rem;
     }
     .contact-container {

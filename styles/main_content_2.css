@@ -5,11 +5,10 @@
   padding-left: 80px;
   padding-right: 80px;
   text-align: center;
-background-color: --bg-color;
 }
 .vision-mission h1 {
   font-size: 2.2rem;
-  color: var(--primary-blue);
+  color: var(--vm-title-color);
   margin-bottom: 50px;
   letter-spacing: 2px;
 }
@@ -20,8 +19,7 @@ background-color: --bg-color;
 }
 .vm-card {
   flex: 1;
-  background: var(--bg-blue);;
-  color: white;
+  background: var(--vm-card-bg);
   padding: 40px;
   border-radius: 10px;
   text-align: center;
@@ -29,7 +27,7 @@ background-color: --bg-color;
 .vm-card h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: white;
+  color: var(--vm-title-color)
 }
 .vm-card p {
   font-size: 1.05rem;

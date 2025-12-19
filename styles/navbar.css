@@ -1,8 +1,38 @@
 .main-wrapper {
     --bg-color: #ffffff;
     --text-color: #000000;
-    --nav-bg: #035E7B;
+    --nav-bg: rgb(3, 94, 123);
     --nav-text: white;
+    --hero-box-bg: rgba(4, 55, 80, 0.6);
+    --logo-filter: none;
+
+    --vm-title-color: #000000;
+    --vm-card-bg: rgba(3, 94, 123, 0.85);
+    --vm-box-color: #84BCD1;
+
+    --gov-bg: #64aac3;
+    --gov-glass-bg: rgba(132, 188, 209, 0.8);
+    --gov-title-color: #032534;
+    --gov-text-color: #004d40;
+
+    --faq-title-bg: hsl(197, 43%, 55%);
+    --faq-card-bg: hsl(201, 22%, 67%);
+    --faq-card-text: #1a1a1a;
+    --faq-nav-bg: hsl(197, 67%, 31%);
+    --faq-nav-hover: hsl(197, 57%, 18%);
+
+    --contact-container-bg: #032534;
+    --contact-text: #ffffff;
+    --contact-input-bg: #9fbac3;
+    --contact-input-text: #000000;
+    --contact-btn-bg: #007bff;
+    --contact-btn-hover: #0056b3;
+
+    --footer-bg: #02202b;
+    --footer-text: #ffffff;
+    --footer-accent: #00b894;
+    --footer-bottom-bg: rgba(132, 188, 209, 0.8);
+    --footer-social-bg: #035E7B;
 
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -20,6 +50,36 @@
     --text-color: #e0e0e0;
     --nav-bg: #022c3b;
     --nav-text: #cccccc;
+    
+    --hero-box-bg: rgba(4, 55, 80, 0.85);
+    --logo-filter: invert(1);
+
+    --vm-title-color: #ffffff;
+    --vm-card-bg: #1f2933;
+
+    --gov-bg: #0b1e27;
+    --gov-glass-bg: rgba(255, 255, 255, 0.05);
+    --gov-title-color: #ffffff;
+    --gov-text-color: #80cbc4;
+
+    --faq-title-bg: #03445a;
+    --faq-card-bg: #1f2933;
+    --faq-card-text: #e0e0e0;
+    --faq-nav-bg: #022c3b;
+    --faq-nav-hover: #03445a;
+
+    --contact-container-bg: #0b1e27;
+    --contact-text: #e0e0e0;
+    --contact-input-bg: #152b34;
+    --contact-input-text: #ffffff;
+    --contact-btn-bg: #0056b3;
+    --contact-btn-hover: #004499;
+
+    --footer-bg: #051014;
+    --footer-text: #cccccc;
+    --footer-accent: #00b894;
+    --footer-bottom-bg: #1f2933;
+    --footer-social-bg: #022c3b;
 }
 
 .navbar {
@@ -46,7 +106,6 @@
 #logo2 {
     height: auto;
     width: 200px;
-    object-fit: ;
 }
 
 .links {
@@ -56,9 +115,6 @@
     align-items: center;
     margin: 0;
     padding: 0;
-}
-
-.links {
     margin-left: auto;
     margin-right: 30px;
 }
@@ -126,11 +182,7 @@
     
     .links {
         margin: 0;
-    }
-
-    .links {
         display: none;
-        
         position: absolute;
         top: 80px;
         left: 0;

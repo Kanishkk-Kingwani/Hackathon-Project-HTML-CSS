@@ -1,10 +1,11 @@
 .footer {
     margin-top: auto; 
     width: 100%;
-    background-color: #033445;
-    color: #ffffff;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     padding-top: 60px;
-    border-top: 4px solid #00b894;
+    border-top: 4px solid var(--footer-accent);
+    transition: background-color 0.3s ease;
 }
 
 .footer-container {
@@ -28,8 +29,8 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 25px;
-    color: #fff;
-    border-left: 3px solid #00b894;
+    color: var(--footer-text);
+    border-left: 3px solid var(--footer-accent);
     padding-left: 10px;
 }
 
@@ -42,7 +43,7 @@
 .label {
     font-size: 11px;
     text-transform: uppercase;
-    color: #00b894; 
+    color: var(--footer-accent); 
     font-weight: 600;
     margin-bottom: 5px;
     letter-spacing: 1px;
@@ -50,7 +51,8 @@
 
 .text {
     font-size: 14px;
-    color: #ccc;
+    color: var(--footer-text);
+    opacity: 0.8;
     line-height: 1.5;
 }
 
@@ -63,14 +65,14 @@
 .social-btn {
     text-align: right;
     text-decoration: none;
-    color: #fff;
-    background-color:#035E7B;
+    color: white;
+    background-color: var(--footer-bottom-bg);
     padding: 12px 20px;
     border-radius: 4px;
     font-size: 14px;
     transition: 0.3s ease;
     display: inline-block;
-    width: 150px;
+    width: 165px;
     border-left: 4px solid #555; 
 }
 
@@ -85,11 +87,11 @@
 }
 
 .icon2 {
-  width: 28px;
-  height: 28px;
-  margin-right: 12px;
-  vertical-align: middle;
-  transition: transform 0.2s ease;
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
 }
 
 .map-box {
@@ -106,17 +108,19 @@
 }
 
 .footer-bottom {
-    background-color: #0a0a0a;
+    background-color: var(--footer-bottom-bg);
     text-align: center;
     padding: 20px;
     margin-top: 50px;
     border-top: 1px solid #222;
+    transition: background-color 0.3s ease;
 }
 
 .footer-bottom p {
     margin: 0;
     font-size: 13px;
-    color: #555;
+    color: var(--footer-text);
+    opacity: 0.5;
 }
 
 @media (max-width: 800px) {

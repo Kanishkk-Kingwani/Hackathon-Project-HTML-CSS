@@ -1,15 +1,17 @@
 .governors-section {
   padding: 40px 0 60px;
   text-align: center;
-  background-color: #84bcd1;
+  background-color: var(--gov-bg);
   overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .governors-section h1 {
   font-size: clamp(2.5rem, 5vw, 6rem);
   margin-bottom: 40px;
   margin-top: 0;
-  color: #032534;
+  color: var(--gov-title-color);
+  transition: color 0.3s ease;
 }
 
 .gov-slideshow {
@@ -18,9 +20,10 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--gov-glass-bg);
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
 }
 
 .gov-slides {
@@ -52,20 +55,21 @@
   width: 50%;
   padding-left: 5%;
   text-align: left;
-  color: #032534;
+  color: var(--gov-title-color);
 }
 
 .gov-info h2 {
   margin-bottom: 10px;
   font-size: clamp(1.8rem, 3vw, 4rem);
   line-height: 1.1;
+  color: var(--gov-title-color);
 }
 
 .gov-info p {
   margin-bottom: 20px;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   font-weight: 500;
-  color: #004d40;
+  color: var(--gov-text-color);
 }
 
 .icon {
@@ -91,32 +95,4 @@
   28%, 38%  { transform: translateX(-28.5714%); }
   42%, 52%  { transform: translateX(-42.8571%); }
   56%, 66%  { transform: translateX(-57.1428%); }
-  70%, 80%  { transform: translateX(-71.4285%); }
-  84%, 96%  { transform: translateX(-85.7142%); }
-  100%      { transform: translateX(0); }
-}
-
-@media screen and (max-width: 750px) {
-
-  .gov-slide {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px 15px;
-  }
-
-  .gov-slide > img {
-    width: 80%;
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-
-  .gov-info {
-    width: 100%;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .icon {
-    justify-content: center;
-  }
-}
+  70%, 80%  { transform: translateX(-71.
