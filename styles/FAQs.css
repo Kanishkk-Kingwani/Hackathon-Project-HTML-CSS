@@ -7,6 +7,7 @@ input[type="radio"] {
   background-image: url("../assets/FAQs.jpg");
   background-size: cover;
   background-position: center;
+  min-height: 55vh;
   height: auto; 
 }
 
@@ -20,7 +21,7 @@ input[type="radio"] {
 }
 
 .faq-slider {
-  position: relative;
+  position:relative;
   height: auto;
   width: 100%;
 }
@@ -34,16 +35,18 @@ input[type="radio"] {
   border-radius: 6px;
   position: relative; 
   width: 100%;
+  min-height: 500px;
   height: auto;
   box-sizing: border-box;
 }
 
 .faq-card h2 {
-  margin-bottom: auto;
+  margin: auto;
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .faq-card p {
+  margin-bottom: auto;
   line-height: 1.6;
   color: var(--text-color);
   font-size: clamp(1rem, 2vw, 1.4rem);
@@ -66,7 +69,7 @@ input[type="radio"] {
 .nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: auto;
   position: relative; 
   z-index: 2;
 }
@@ -94,6 +97,7 @@ input[type="radio"] {
 @media screen and (max-width: 750px) {
   .faq-section {
     padding: 40px 5%;
+    min-height: 90vh;
   }
 
   .faq-title {
@@ -103,6 +107,7 @@ input[type="radio"] {
 
   .faq-card {
     padding: 25px;
+    min-height: 65vh;
     height: auto; 
   }
 
