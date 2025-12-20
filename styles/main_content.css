@@ -40,6 +40,7 @@
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  transition: font-size 0.3s ease;
 }
 
 
@@ -50,7 +51,8 @@
 
 .bullet :hover{
   background-color: #116584;
-  box-shadow: 0 12px 25px rgba(0,0,0,0.4c);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+  font-size: 1.40rem;
 }
 
 @media (max-width: 768px) {
