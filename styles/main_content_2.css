@@ -19,7 +19,7 @@
 }
 .vm-card {
   flex: 1;
-  background: var(--vm-card-bg);
+  background: var(--gov-bg);
   padding: 40px;
   border-radius: 10px;
   text-align: center;
