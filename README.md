@@ -1,44 +1,71 @@
-Hackathon-Project-HTML-CSS
+# Communiqué IIT Kharagpur Website
 
-(TEAM-A)
+This project is a responsive landing page for **Communiqué**, the official Soft Skills & Personality Development Society of IIT Kharagpur. The website features a theme-switching system (Dark/Light mode), interactive CSS-based sliders, and a fully responsive layout for mobile and desktop.
 
-Team Members
-Kanishkk Kingwani
-Krishna Soni
-Prithish Parekh(Team Leader)
-Alabhya Jain
-Sarika Kumari
-Shivansh Tomar
+## 📂 Directory Structure
 
+To ensure the styles and images load correctly, organize your project as follows:
 
-Advanced Requirements added to Project:
+```text
+/Project-Root
+│
+├── index.html              # Main webpage structure
+├── styles/                 # All CSS stylesheets
+│   ├── main.css            # Global resets and animations
+│   ├── navbar.css          # Navigation and theme variables
+│   ├── hero.css            # Top landing section styles
+│   ├── main_content.css    # Core Competencies section
+│   ├── main_content_2.css  # Vision & Mission section
+│   ├── governors.css       # Governors slideshow styles
+│   ├── FAQs.css            # Interactive FAQ logic
+│   ├── contact.css         # Contact form styling
+│   └── footer.css          # Footer and social links
+└── assets/                 # Images and icons (Reference point)
+    ├── icons/              # Social media and UI icons
+    └── governors/          # Photos of the society governors
 
-1.Dark Mode Toggle using CSS variables.
-2.Staggered animations or smooth transitions using keyframes. 
-3.Fluid typography using clamp().
-4.All layouts must be responsive across mobile, tablet, and desktop.
+```
 
-Suggested Features or Sections to add in the current Communiqué (entire) website:
+---
 
-1.Upcoming Event Section: Registration links for events can be provided over there (increases site visitors).
-2.Achievement & Impact Section: Key Collaborations or Recognitions, Testimonials from participants or alumni, Students impacted can be shown.
-3.Get in Touch Section: One can write their query regarding the society or any event.
+## 📝 File Overview
 
-Problems or Limitations in the website:
+### 🏗️ Content (HTML)
 
-1.Navigation Bar is crowded, sections in the homepage can be put in a single section “Home” with a drop down menu.
-2.Alternate text for images is not available.
-3.Nav Toggle/Hamburger Icon is not visible on opening the site(visible only after clicking on the Nav Bar once), letting visitor think there is no section.
-4.Images in the Governors Section are not in proportion on mobile view.
-5.Animation is not smooth.
-6.Governors Section looks artificial.
+* **`index.html`**: The core file that links all styles and defines the website sections, including the navbar, hero section, core competencies, vision/mission, governors, FAQs, and contact footer.
 
-Improvement after Redesigning Home Page:
+### 🎨 Styling (CSS)
 
-1.Get in Touch Section provided for visitors to ask any query.
-Dark Mode Toggle provided.
-2.Smooth animations applied to enhance flow.
-3.The Hamburger button was made visible in mobile view.
-4.The images of governors are in perfect proportion.
-5.The Footer is enhanced by a huge margin.
-		                    		
+All CSS files are **static** files used to render the visual design and layout.
+
+| File Name | Nature | Description |
+| --- | --- | --- |
+| **`main.css`** | Static | Sets global typography, background colors, and fade-in scroll animations. |
+| **`navbar.css`** | Static | Manages the sticky navbar and the **Dark/Light Mode** CSS variables. |
+| **`hero.css`** | Static | Styles the entrance section with a background image and the society branding. |
+| **`main_content.css`** | Static | Handles the grid layout for the "Core Competencies" icons and text. |
+| **`main_content_2.css`** | Static | Provides layout styles for the Vision and Mission cards. |
+| **`governors.css`** | Static | Contains the **CSS animation logic** for the automatic sliding profile section. |
+| **`FAQs.css`** | Static | Uses radio-button logic to create an interactive FAQ slider without JavaScript. |
+| **`contact.css`** | Static | Styles the user input forms and contact information container. |
+| **`footer.css`** | Static | Manages the multi-column footer, social media buttons, and map embed. |
+
+---
+
+## 🚀 How to Open the Website
+
+Since this project uses standard HTML and CSS, you can run it locally without any server installation.
+
+### Method 1: Direct Launch
+
+1. Navigate to your project folder.
+2. Find the `index.html` file.
+3. **Right-click** `index.html` and select **Open with** > **Google Chrome** (or your preferred browser).
+
+### Method 2: Development Mode (VS Code)
+
+1. Open the project folder in **Visual Studio Code**.
+2. Install the **Live Server** extension.
+3. Click the **"Go Live"** button at the bottom-right corner of the editor.
+4. The website will automatically open and refresh whenever you save changes to your code.
+
